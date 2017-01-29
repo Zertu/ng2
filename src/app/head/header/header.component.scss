@@ -1,0 +1,27 @@
+// component css goes here
+nav {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #0baded;
+    div {
+        li {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            height: 120px;
+            color: lightpink;
+            a {
+                color: #F60;
+                &:link,
+                 :visited,
+                 :hover,
+                 :active {
+                    text-decoration: none;
+                    color: #F60;
+                }
+            }
+        }
+    }
+}

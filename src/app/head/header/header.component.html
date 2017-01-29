@@ -1,0 +1,8 @@
+<!--component html goes here -->
+<nav>
+  <div>
+    <li *ngFor="let heros of hero"><a  (click)="onselect(heros)">{{heros.name}}</a></li>
+  </div>
+</nav>
+
+<dashboard [myhero]="heroes"></dashboard>
