@@ -4,7 +4,6 @@ import { $$observable } from 'rxjs/symbol/observable';
 import { Component, Input, OnInit } from '@angular/core'
 import { HeroService } from '../../hero.service'
 import { Observable } from 'rxjs'
-import { Http, Response } from '@angular/http'
 
 @Component({
     moduleId: module.id,
@@ -12,11 +11,9 @@ import { Http, Response } from '@angular/http'
     templateUrl: 'header.component.html',
     styleUrls: ['header.component.scss']
 })
-
 export class HeaderComponent implements OnInit {
     constructor(
         private HeroService: HeroService,
-        private http: Http,
     ) { }
     ngOnInit() {
         this.hero = this.HeroService.getall()
@@ -32,8 +29,7 @@ export class HeaderComponent implements OnInit {
         //         console.log(da)
         //     })
         // })
-    }
-
+    }    
     hero
     heroes
     onselect(heroes) {

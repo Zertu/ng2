@@ -1,5 +1,8 @@
 // component css goes here
 div {
-    margin-left:300px;
-     
+    margin-left: 300px;
+    div {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
 }

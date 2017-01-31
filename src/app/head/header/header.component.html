@@ -1,8 +1,8 @@
 <!--component html goes here -->
 <nav>
+  <input [(ngModel)]="heroName"> 搜索
   <div>
-    <li *ngFor="let heros of hero"><a  (click)="onselect(heros)">{{heros.name}}</a></li>
+    <li *ngFor="let heros of (hero | flyingHeroes)"><a (click)="onselect(heros)">{{heros}}</a></li>
   </div>
 </nav>
-
 <dashboard [myhero]="heroes"></dashboard>
