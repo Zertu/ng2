@@ -1,16 +1,18 @@
 // Angular Imports
 import { NgModule } from '@angular/core';
 
-import {DashboardComponent} from '../dashboard/dashboard.component'
+import { DashboardComponent } from '../dashboard/dashboard.component'
 // This Module's Components
 import { HeaderComponent } from './header.component';
-
+import { pipesearch } from '../../pipe/search.pipe'
 @NgModule({
     imports: [
-        DashboardComponent
+        DashboardComponent,
+        pipesearch
     ],
     declarations: [
         HeaderComponent,
+        pipesearch
     ],
     exports: [
         HeaderComponent,
